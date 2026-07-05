@@ -7,7 +7,7 @@ class MyApp(emcommerce):
         self.end_headers()
         self.wfile.write(b"<h1>Hello from Python App!</h1>")
 
-server = HTTPServer(("0.0.0.0", 9000), MyApp)
+server = HTTPServer(("0.0.0.0", 5000), MyApp)
 
 print("Server running on http://localhost:8080")
 server.serve_forever()
